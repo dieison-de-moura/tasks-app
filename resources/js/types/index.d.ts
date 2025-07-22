@@ -35,4 +35,15 @@ export interface User {
     updated_at: string;
 }
 
+export interface Task {
+    id: number;
+    user_id: number;
+    title: string;
+    description: string;
+    status: 'pending' | 'finished';
+    deadline?: string | null;
+    created_at: string;
+    updated_at: string;
+}
+
 export type BreadcrumbItemType = BreadcrumbItem;
